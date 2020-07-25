@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import store from './app/store';
+import store from '../src/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import Chat from './chat/index';
+import 'semantic-ui-css/semantic.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Chat />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

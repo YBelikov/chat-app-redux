@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.message-list {
+  height: 81vh;
+  background-color:rgb(211, 207, 207);
+}
+
+.chat {
+  display: "flex";
+  flex-direction : "column";
+  height: 100hv
+}
+
+.message {
+  margin-bottom: 4px;
+  word-break: break-all 
+}
+
