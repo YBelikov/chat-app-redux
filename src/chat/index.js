@@ -5,13 +5,12 @@ import Header from '../header/index';
 import UserInterface from '../userInterface/index';
 import DeleteModal from '../deleteModal/index';
 import EditModal from '../editModal/index';
-import * as actions from './actions';
 
 class Chat extends React.Component {
     constructor(props) {
         super(props);
+     
     }
-
 
     render() {
         return(
@@ -33,8 +32,6 @@ const mapStateToProps = (state) => {
         users : [...new Set(state.chat.map(message => message.userId))].length
     };
 }
-
-
 export default connect(mapStateToProps)(Chat);
 
 

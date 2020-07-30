@@ -163,7 +163,6 @@ export default function (state = initialState, action) {
         }
         case DELETE_MESSAGE: {
             const {id} = action.payload;
-            console.log(id);
             return state.filter(message => message.id != id);
         }
         default : {
